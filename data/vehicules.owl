@@ -1,0 +1,648 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nader/ontologies/2020/10/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/nader/ontologies/2020/10/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vehicules="http://www.semanticweb.org/nader/ontologies/2020/10/vehicules#"
+     xmlns:vehicules1="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/nader/ontologies/2020/10/untitled-ontology-8#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules"/>
+<!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#clio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#TEST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Berline"/>
+        <vehicules:consomme rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence"/>
+        <vehicules:est_compose_de rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Auto"/>
+        <vehicules:est_compose_de rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#4"/>
+        <vehicules:est_fabrique_par rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#VW"/>
+        <vehicules:couleur>undefined</vehicules:couleur>
+        <vehicules:image>https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg?crop=1xw:0.9997727789138833xh;center,top</vehicules:image>
+        <vehicules:nombreDePortes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vehicules:nombreDePortes>
+    </owl:NamedIndividual>
+
+<!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#clio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#TEST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Berline"/>
+        <vehicules:consomme rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Diesel"/>
+        <vehicules:est_compose_de rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Auto"/>
+        <vehicules:est_compose_de rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#4"/>
+        <vehicules:est_fabrique_par rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#VW"/>
+        <vehicules:couleur>undefined</vehicules:couleur>
+        <vehicules:image>https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg?crop=1xw:0.9997727789138833xh;center,top</vehicules:image>
+        <vehicules:nombreDePortes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vehicules:nombreDePortes>
+    </owl:NamedIndividual>
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#libelle -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#libelle"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#consomme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#consomme">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Moteur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Carburant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#contient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#contient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Cylindree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#entraine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#entraine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Boite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Moteur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Boite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Roues"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#est_compose_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#est_compose_de">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Moteur"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Cylindree"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Moteur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Roues"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#est_fabrique_par -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#est_fabrique_par">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Marque"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#couleur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#couleur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#image -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#image">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#nom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Marque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#nombreDePortes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#nombreDePortes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#pays -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#pays">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Marque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Auto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Auto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Boite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#BasDeGamme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#BasDeGamme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Marque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Berline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Berline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Boite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Boite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Moteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Carburant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Carburant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Moteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Citadine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Citadine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Coupee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Coupee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Cylindree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Cylindree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Moteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Diesel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Diesel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Carburant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Electrique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Electrique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Carburant"/>
+        <vehicules1:libelle>Electrique</vehicules1:libelle>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Carburant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#HauteGamme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#HauteGamme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Marque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Hybride -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Hybride">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Carburant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Boite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Marque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Marque"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Moteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Moteur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MoyenneGamme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MoyenneGamme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Marque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Roues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Roues"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#SUV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#SUV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Semi-auto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Semi-auto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Boite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#pick-up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#pick-up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Voiture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#12">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Cylindree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Cylindree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Cylindree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Cylindree"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#CHERRY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#CHERRY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#BasDeGamme"/>
+        <vehicules1:nom>cherry</vehicules1:nom>
+        <vehicules1:pays>chine</vehicules1:pays>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Diesel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Diesel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#FIAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#FIAT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MoyenneGamme"/>
+        <vehicules1:nom>Fiat</vehicules1:nom>
+        <vehicules1:pays>Italia</vehicules1:pays>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Hybrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Hybrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Hybride"/>
+        <vehicules1:libelle>Hybride</vehicules1:libelle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Hybride -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Hybride"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#KUV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#KUV">
+        <vehicules1:consomme rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence"/>
+        <vehicules1:est_compose_de rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle"/>
+        <vehicules1:est_fabrique_par rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MAHINDRA"/>
+        <vehicules1:couleur>rouge</vehicules1:couleur>
+        <vehicules1:pays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vehicules1:pays>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#LAND_ROVER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#LAND_ROVER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#HauteGamme"/>
+        <vehicules1:nom>Land rover</vehicules1:nom>
+        <vehicules1:pays>Angleterre</vehicules1:pays>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MAHINDRA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MAHINDRA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#BasDeGamme"/>
+        <vehicules1:nom>Mahindra</vehicules1:nom>
+        <vehicules1:pays>Indie</vehicules1:pays>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MERCEDES_BENZ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MERCEDES_BENZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#HauteGamme"/>
+        <vehicules1:nom>MERCEDES_BENZ</vehicules1:nom>
+        <vehicules1:pays>Allemange</vehicules1:pays>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Megane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Megane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Citadine"/>
+        <vehicules1:consomme rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence"/>
+        <vehicules1:est_compose_de rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle"/>
+        <vehicules1:est_fabrique_par rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#RENAULT"/>
+        <vehicules1:couleur>blue</vehicules1:couleur>
+        <vehicules1:image>https://cdn.motor1.com/images/mgl/2MVN4/s3/renault-megane-rs.jpg</vehicules1:image>
+        <vehicules1:nombreDePortes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vehicules1:nombreDePortes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Passat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Passat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Berline"/>
+        <vehicules1:consomme rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence"/>
+        <vehicules1:est_compose_de rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle"/>
+        <vehicules1:est_fabrique_par rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#VW"/>
+        <vehicules1:couleur>Noir</vehicules1:couleur>
+        <vehicules1:image>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/VW_Passat_B8_Limousine_2.0_TDI_Highline.JPG/1200px-VW_Passat_B8_Limousine_2.0_TDI_Highline.JPG</vehicules1:image>
+        <vehicules1:nombreDePortes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vehicules1:nombreDePortes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#RENAULT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#RENAULT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MoyenneGamme"/>
+        <vehicules1:nom>Renault</vehicules1:nom>
+        <vehicules1:pays>France</vehicules1:pays>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Range_rover_sport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Range_rover_sport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#SUV"/>
+        <vehicules1:consomme rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Hybrid"/>
+        <vehicules1:est_fabrique_par rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#LAND_ROVER"/>
+        <vehicules1:couleur>noir</vehicules1:couleur>
+        <vehicules1:image>https://www.groupe-grim.com/jaguar-land-rover/wp-content/uploads/2021/03/range-rover-sport-svr.jpg</vehicules1:image>
+        <vehicules1:nombreDePortes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vehicules1:nombreDePortes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Semi_Auto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Semi_Auto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Semi-auto"/>
+        <vehicules1:libelle>Semi auto</vehicules1:libelle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Tipo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Tipo">
+        <vehicules1:consomme rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence"/>
+        <vehicules1:est_compose_de rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle"/>
+        <vehicules1:est_fabrique_par rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#FIAT"/>
+        <vehicules1:couleur>blanc</vehicules1:couleur>
+        <vehicules1:image>https://www.largus.fr/images/images/fiat-tipo-2021-3.jpg?width=612&amp;quality=80</vehicules1:image>
+        <vehicules1:nombreDePortes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vehicules1:nombreDePortes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#VW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#VW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MoyenneGamme"/>
+        <vehicules1:nom>Volkswagen</vehicules1:nom>
+        <vehicules1:pays>Germany</vehicules1:pays>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#class_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#class_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Coupee"/>
+        <vehicules1:consomme rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Hybride"/>
+        <vehicules1:est_fabrique_par rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#MERCEDES_BENZ"/>
+        <vehicules1:couleur>blanc</vehicules1:couleur>
+        <vehicules1:image>https://images.caradisiac.com/images/6/3/3/0/176330/S0-essai-mercedes-a180-2019-une-etoile-meritee-593258.jpg</vehicules1:image>
+        <vehicules1:nombreDePortes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vehicules1:nombreDePortes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#tigo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#tigo">
+        <vehicules1:consomme rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence"/>
+        <vehicules1:est_compose_de rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle"/>
+        <vehicules1:est_fabrique_par rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#CHERRY"/>
+        <vehicules1:couleur>rouge</vehicules1:couleur>
+        <vehicules1:image>https://autosprix.fr/wp-content/uploads/2020/01/JhyEMyVv.jpg</vehicules1:image>
+        <vehicules1:nombreDePortes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vehicules1:nombreDePortes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#18_INCH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#18_INCH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Roues"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#19_INCH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#19_INCH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Roues"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#22_INCH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#22_INCH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Roues"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Diesel">
+        <vehicules1:libelle>diesel</vehicules1:libelle>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Essence">
+        <vehicules1:libelle>essence</vehicules1:libelle>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2021/10/vehicules#Manuelle">
+        <vehicules1:libelle>manuelle</vehicules1:libelle>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
